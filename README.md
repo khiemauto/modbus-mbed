@@ -3,6 +3,7 @@ Library modbus for mbed framework
 
 Example with STM32F4:
 
+/***BEGIN**/
 #include <mbed.h>
 #include "ModbusSerial.h"
 
@@ -32,3 +33,10 @@ int main() {
    wait_ms(100);    //unnecessary
   }
 }
+
+/***END**/
+
+I tested with PC by using Modbus Tester software.
+Link download Modbus Tester (Windows OS): 
+http://www.modbus.pl/Modbus%20Tester_MODBUS.PL.html
+
