@@ -23,14 +23,14 @@ class ModbusSerial : public Modbus {
         Serial* _port;
         long  _baud;
         u_int _format;
-        DigitalOut  *_txPin = 0;
+        DigitalOut  *_txPin;
         unsigned int _t15; // inter character time out
         unsigned int _t35; // frame delay
         uint8_t  _slaveId;
 
 		Timeout _request;
-		uint8_t _rxbuffer[MODBUS_BUFFER_SIZE] = {0};
-		uint16_t _rxlen = 0;
+		uint8_t _rxbuffer[MODBUS_BUFFER_SIZE];
+		uint16_t _rxlen;
 
 		void interruptRx();
 		void responeRequest();
