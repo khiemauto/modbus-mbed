@@ -3,7 +3,7 @@ Library modbus for mbed framework
 
 Example with STM32F4:
 
-/***BEGIN**/
+```
 #include <mbed.h>
 #include "ModbusSerial.h"
 
@@ -34,7 +34,7 @@ int main() {
   }
 }
 
-/***END**/
+```
 
 I tested with PC by using Modbus Tester software.
 Link download Modbus Tester (Windows OS): 
