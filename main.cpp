@@ -1,3 +1,7 @@
+/*
+    main.cpp - Main file test modbus
+    Copyright (C) 2019 Khiem Tran
+*/
 #include <mbed.h>
 #include "ModbusSerial.h"
 
